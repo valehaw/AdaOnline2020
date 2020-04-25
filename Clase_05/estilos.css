@@ -1,0 +1,20 @@
+.card {
+    border-radius: 5px;
+    box-shadow: 0 0 5px #333;
+    padding: 20px;
+    width: 200px;
+    font-size: 12px;
+}
+
+.header-img{
+    width: 100%;
+}
+
+.artist-name{
+    margin-top: 25px;
+}
+
+.footer-link img{
+    width: 40px;
+
+}
