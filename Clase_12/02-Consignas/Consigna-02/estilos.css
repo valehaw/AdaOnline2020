@@ -1,0 +1,134 @@
+body{
+    align-items: center;
+    background: #3e0627;
+    color: #414040;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    justify-content: center;  
+}
+
+p{
+    color: #580b38;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top:10px;  
+}
+
+h1{
+    color: #3e0627;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h3{
+    font-size: 10px;
+    font-weight: 400;
+    color:white;
+    margin: 0;
+}
+
+.card{
+    background:#e6e5e5;
+    border-radius: 10px;
+    position: relative;
+    width: 320px;
+}
+
+.header-img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.info{
+    padding: 30px 25px 0 25px;
+}
+
+.logo{
+    left: 10px;
+    position: absolute;
+    top:128px;
+    width: 29%;
+}
+
+#dates{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+    
+}
+
+.dates{
+    background: #5a0e3b;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    height: 50px;
+    margin: 0 5px 0 5px;
+    padding-top: 9px;
+    text-align: center;
+    width: 50px;
+}
+
+.dates:hover{
+    background: #380725;
+}
+
+.dates:active{
+    background-color:#7c2357;
+}
+
+.footer{
+    border-top: 1px solid #7c2357;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 0 20px 0;
+    width: 85%;  
+}
+
+.fa-heart,
+.fa-bookmark{
+    color: #7c2357;
+    cursor: pointer;
+    font-size: 17px;
+    padding-right: 5px;
+}
+
+.fa-circle{
+    color: #7c2357;
+    cursor: pointer;
+    font-size: 5px;
+    padding: 0 2px 0 2px;
+}
+
+.interaction{
+    display: flex;
+    justify-content: space-around;
+}
+
+.interaction h3{
+    color: #7c2357;
+    font-size: 14px;
+    margin-right: 25px;
+    padding: 2px;  
+}
+
+.continue{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 50px;
+}

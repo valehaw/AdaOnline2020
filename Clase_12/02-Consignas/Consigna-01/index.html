@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" >
+    <title>CONSIGNA 01</title>
+</head>
+<body>
+    <!-- ESTA ES LA BARRA DE STATUS-->
+    <main>
+        <section class="status">
+            <img src="imagenes/logo.jpg" width="90" alt="logo">
+            <nav>
+                <li><a href="#">Shopping Bag</a></li>
+                <li><a class="active" href="#">Checkout</a></li>
+                <li><a href="#">Confirmation</a></li>
+            </nav>
+            <i class="fas fa-cart-plus"></i>
+        </section>
+
+
+        <section class="container">
+
+        <!-- ESTE ES EL BOX IZQUIERDO-->    
+            <div class="box">
+                <div class="title">
+                    <h1>Personal Information</h1>
+                </div>
+
+                <form action="#" method="GET">
+                
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <label>First Name</label>
+                            <input type="text" name="name" placeholder="Adrien" />
+                        </div>
+                        
+                        <div class="field-wrap">
+                            <label>Last Name</label>
+                            <input type="text" name="name" placeholder="Gervaix"/>
+                        </div>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>Email Address</label>
+                        <input type="email" name="email" placeholder="adrien.gervaix@gmail.com"/>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>Street</label>
+                        <input type="text" name="street" placeholder="284, Place de la bourse"/>
+                    </div>
+
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <label>City</label>
+                            <input type="text" name="city" placeholder="Lille" />
+                        </div>
+                        
+                        <div class="field-wrap">
+                            <label>Country</label>
+                            <select name="select">
+                                <option value="France">France</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Portugal">Portugal</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>Phone number</label>
+                        
+                        <input class="cod-area" type="number" name="number" placeholder="6 12 34 56 78"/>
+                        <div class="cuadradito">+33</div>
+                    </div>
+
+                </form>
+            </div>
+        
+
+            <div class="box second">
+                <div class="title">
+                    <h1>Delivery</h1>
+                    <h2>Delivery Fee</h2>
+                </div>
+
+                <div class="delivery">
+                    <div class="delivery-time">
+                        <h3>0$</h3>
+                        <h4>3-4 weeks</h4>
+                    </div>
+                    <div class="delivery-time selected">
+                        <h3 class="selected">5$</h3>
+                        <h4 class="selected">2-5 days</h4>
+                    </div>
+
+                </div>
+                <h2>Estimated delivery date <span>August 4th.</span>
+                    <br>
+                Every package has a tracking number.</h2>
+            
+            </div>
+
+            <div class="box third">
+                <ul>
+                    <li>
+                        <label class="checkbox" for="checkid">
+                        <input class="checkid" type="checkbox" name="check" value="test" />
+                        <span class="checkmark"></span>
+                        Suscribe to our newsletter</label>
+                    </li>  
+
+                    <li>
+                        <label class="checkbox" for="checkid">
+                        <input class="checkid" type="checkbox" name="check" value="test" />
+                        Create an account</label>
+                    </li> 
+                    
+                        <button type="submit">Confirm my order</button>
+                    
+                </ul>
+            </div>
+        
+        </section>
+
+    </main>
+
+</body>
+</html>

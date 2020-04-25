@@ -1,0 +1,40 @@
+body{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+
+.container{
+    border: 1px solid black;
+    height: 500px;
+    position: relative;
+    width: 500px;
+}
+
+.cuadrito {
+    background: crimson;
+    height: 100px;
+    position: absolute;
+
+/*valores posibles:
+1.absolute
+2.relative
+3.fixed
+4.static*/
+
+    bottom: 50px;
+    top: 50px;
+    left: 290px;
+    width: 100px;
+}
+
+.cuadrito-2{
+    background: teal;
+    height: 100px;
+    position: fixed;
+    top: 10px;
+    left:10px;
+    width: 100px;
+}

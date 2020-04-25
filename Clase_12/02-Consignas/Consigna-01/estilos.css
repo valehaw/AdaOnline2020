@@ -1,0 +1,290 @@
+body{
+    align-items:center;
+    background: #9077eb;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;  
+}
+
+*{
+    margin:0;
+    padding: 0; 
+}
+
+h1{
+    color:#3d3d3d;
+    font-size: 17px;
+    
+}
+
+
+
+/*ESTILOS DE LA BARRA DE STATUS*/
+
+
+main{
+    background: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 6px 40px #3d3d3d;
+    padding: 25px 0 30px 0;
+    width: 65%; 
+}
+
+a{
+    color: lightgray;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none; 
+}
+
+a.active{
+    color: #9077eb;
+    font-weight: bold;
+}
+
+.status{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 20px 60px 5px 60px;
+    width: 100%;
+}
+
+nav{
+    list-style-type: none;
+}
+
+li{
+    display: inline;   
+}
+
+.fa-cart-plus{
+    color: #9077eb;
+    cursor: pointer;
+    font-size: 22px; 
+}
+
+
+
+/*ESTILOS DE LAS CAJAS*/
+
+
+
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right:25px; 
+    width: 100%;
+}
+
+.box{
+    background: #f4f4f4;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin:20px 13px;
+    padding: 0 10px 30px 10px;
+    width: 45%; 
+}
+
+.box.second{
+    
+    background: #f4f4f4;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: 245px;
+    padding: 0 10px 30px 10px;
+    width: 45%;
+}
+
+.box.third{
+    background: white;
+    border: none;
+    box-sizing: border-box;
+    height: 130px;
+    margin-top:-150px;
+    padding:0;
+    width: 45%;
+}
+
+.title{
+    box-sizing: border-box;
+    color: black;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+/*EMPIEZA FORMULARIO*/
+
+form{
+    width: 100%;
+}
+
+label{
+    color:#c9c8c8;
+    display: inline-block;
+    font-size: 11px;
+    padding-bottom: 7px;
+    padding-top: 10px;
+}
+
+input, select{
+    background: white;
+    border: 1px solid #c9c9c9;
+    box-sizing: border-box;
+    color: black;
+    font-size: 12px;
+    height: 32px;
+    padding-left: 10px;
+    width: 100%; 
+}
+
+.top-row{
+    display: flex;
+    width: 100%;
+}
+
+.field-wrap{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cod-area{
+    padding-left: 55px;
+    position: relative; 
+}
+
+.cuadradito{
+    background:#e9e8e8;
+    color: #3d3d3d;
+    border:1px solid #c9c9c9;
+    bottom: 136px;
+    box-sizing: border-box;
+    font-size: 12px;
+    height: 32px;
+    left: 285px;
+    padding-top: 8px;
+    position: absolute;
+    text-align: center;
+    width: 45px;
+}
+
+/*FIN FORMULARIO*/
+
+/*EMPIEZA DELIVERY*/
+
+h2{
+    color:#c9c8c8;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.delivery{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%; 
+}
+
+.delivery-time{
+    align-items: center;
+    background: white;
+    border: 1px solid #c9c9c9;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    padding-top: 15px;
+    width: 42%;  
+}
+
+.delivery-time.selected{
+    background: #9077eb;
+    border: 1px solid #6c54c7;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    padding-top: 15px;
+}
+
+span{
+    color:#9d9d9d;
+    font-weight: 700;
+}
+
+h3{
+    color: #9077eb;
+    font-size: 30px;
+    
+}
+
+h4{
+    color:#7e7e7e;
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 5px;
+    
+}
+
+h3.selected{
+    color:white;
+}
+
+h4.selected{
+    color:#5d45b4;
+}
+
+
+/*FIN DELIVERY*/
+
+/*COMIENZO DE CHECKBOX Y BOTON*/
+
+[type="checkbox"]
+{
+    vertical-align: middle;
+}
+
+.checkbox{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+input.checkid{
+    
+    width: 18px;
+}
+
+button{
+    background:#9077eb;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+    margin-top: 20px;
+    width: 100%;  
+}
+
+button:hover{
+    background: #5d45b4;
+}
+
+
