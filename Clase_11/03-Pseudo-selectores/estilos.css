@@ -1,0 +1,25 @@
+button{
+    background-color: crimson;
+    border: none;
+    color:white;
+    cursor: pointer;
+    display: block;
+    height: 45px;
+    margin-bottom: 25px;
+    transition: all 0.2s ease-in;
+    width: 250px;
+ 
+}
+
+button:hover{
+background: teal;
+font-size: 20px;
+}
+
+button:active{
+    background: orange;
+}
+
+input:focus{
+    background: teal;
+}

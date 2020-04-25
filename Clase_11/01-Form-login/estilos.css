@@ -1,0 +1,36 @@
+body{
+    align-items:center;
+    background: #76B852;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+
+#login-form{
+    background: white;
+    box-sizing: border-box;
+    width: 360px;
+    padding: 45px;
+}
+
+input, button{
+    border: none;
+    box-sizing: border-box;
+    height: 46px;
+    width: 100%;
+    
+}
+
+input   {
+    margin-bottom: 15px;
+    background: #f2f2f2;
+    padding-left: 15px;
+}
+
+button{
+    background: #4CAF50;
+    color: white;
+    font-size: 15px;
+}
