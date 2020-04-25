@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+
+body {
+  background: #F0E8DA;
+  font-family: 'Caveat', cursive;
+}
+
+.container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 500px;
+  height: 250px;
+}
+
+svg#smiley {
+  position: absolute;
+  top: 35px; left: 220px;
+  width: 50px;
+}
+
+svg#evil {
+  z-index: 5;
+  position: absolute;
+  width: 50px;
+  top: 20px; left: 50px;
+}
+
+.pencil {
+  position: absolute;
+  margin: auto;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 500px;
+  height: 100px;
+}
+
+.ruler {
+  position: absolute;
+  width: 500px;
+  height: 80px;
+  background: #FCAB10;
+  border-radius: 3px;
+  box-shadow: 2px 2px 10px #666;
+}
+
+.cm {
+  position: absolute;
+  left: 15px;
+  width: 3px;
+  height: 30px;
+  background: #555;
+}
+
+.mm {
+  position: absolute;
+  left: 30px;
+  width: 3px;
+  height: 25px;
+  background: #555;
+}
+
+.cm2{
+    position: absolute;
+    left: 45px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm2 {
+    position: absolute;
+    left: 60px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm3{
+    position: absolute;
+    left: 75px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm3 {
+    position: absolute;
+    left: 90px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm4{
+    position: absolute;
+    left: 105px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm4 {
+    position: absolute;
+    left: 120px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm5{
+    position: absolute;
+    left: 135px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm5 {
+    position: absolute;
+    left: 150px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm6{
+    position: absolute;
+    left: 165px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm6 {
+    position: absolute;
+    left: 180px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm7{
+    position: absolute;
+    left: 195px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm7 {
+    position: absolute;
+    left: 210px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm8{
+    position: absolute;
+    left: 225px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm8 {
+    position: absolute;
+    left: 240px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm9{
+    position: absolute;
+    left: 255px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm9 {
+    position: absolute;
+    left: 270px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm10{
+    position: absolute;
+    left: 285px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm10 {
+    position: absolute;
+    left: 300px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm11{
+    position: absolute;
+    left: 315px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm11 {
+    position: absolute;
+    left: 330px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm12{
+    position: absolute;
+    left: 345px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm12 {
+    position: absolute;
+    left: 360px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm13{
+    position: absolute;
+    left: 375px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm13 {
+    position: absolute;
+    left: 390px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm14{
+    position: absolute;
+    left: 405px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm14 {
+    position: absolute;
+    left: 420px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm15{
+    position: absolute;
+    left: 435px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm15 {
+    position: absolute;
+    left: 450px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+  .cm16{
+    position: absolute;
+    left: 465px;
+    width: 3px;
+    height: 30px;
+    background: #555;
+  }
+
+  .mm16 {
+    position: absolute;
+    left: 480px;
+    width: 3px;
+    height: 25px;
+    background: #555;
+  }
+
+
+#line {
+  position: absolute;
+}
+
+#mm {
+  position: absolute;
+}
+
+.pencil_body {
+  position: absolute;
+  width: 450px;
+  height: 30px;
+  background: #7BC950;
+  border-radius: 5px;
+}
+
+.pencil_body:before {
+  position: absolute;
+  left: 445px;
+  content: '';
+  width: 30px;
+  height 30px;
+  border-left: 60px solid #D4915D;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.pencil_body:after {
+  position: absolute;
+  top: 8px;
+  left: 475px;
+  content: '';
+  width: 30px;
+  height 30px;
+  border-left: 30px solid #333;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
+#eye-right, #eye-left {
+  fill: #444;
+}
+
+.eraser {
+  position: absolute;
+  top: 200px; left: 0;
+  width: 150px;
+  height: 80px;
+  background: #C0C5C1;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px #666;
+}
+
+.eraser:before {
+  position: absolute;
+  left: 150px;
+  content: '';
+  width: 30px;
+  height: 80px;
+  background: #FFF;
+  box-shadow: 2px 2px 5px #666;
+}
+
+#enemy {
+  position: absolute;
+  top: 155px; left: 0;
+  font-size: 27px;
+  
+}
+
+#bff {
+  position: absolute;
+ top: -45px;
+  font-size: 27px;
+}
+
+
+Resources
