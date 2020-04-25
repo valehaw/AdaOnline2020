@@ -1,0 +1,456 @@
+body{
+    margin: 0;
+    background:linear-gradient(#580b38,#1a0310);
+    background-repeat: no-repeat;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: #580b38;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top:10px;  
+}
+
+h1{
+    color: #3e0627;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h3{
+    font-size: 10px;
+    font-weight: 400;
+    color:white;
+    margin: 0;
+}
+
+h4{
+    margin:0;
+}
+
+h5{
+    font-size: 30px;
+    text-align: center;
+    color: #d483b47e;
+}
+
+
+
+/*Breakpoint de mobile 1*/
+@media (min-width: 320px){
+    header{
+        align-items: center;
+        background: linear-gradient(black, rgba(0, 0, 0, 0.562));
+        box-shadow: 0 2px 15px #1d0212ea;
+        display: flex;
+        height: 70px;
+        justify-content: space-around;
+        width: 100%;   
+    }
+    
+    header img{
+        cursor: pointer;
+        width: 40%;
+        margin: 0;
+    }
+
+    
+    nav{
+        padding: 0 40px 0 40px;
+    }
+
+    a{
+        display: none;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .sign-out{
+        display: inline-block;
+    }
+
+    .menu-button{
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        display: inline;
+        font-size: 12px;
+        font-weight: 300;
+        margin: 0;
+        background: #ac0164;
+        width: 40px;
+        padding: 8px 12px 8px 12px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .menu-button:hover{
+    background: rgb(114, 3, 40);
+    } 
+
+    .menu-button:focus{
+        outline: none;
+    }
+
+    .drop-down{
+        background-color: #30071ee1;
+        left: 0;
+        padding: 5px 0;
+        position: absolute;
+        text-align: center;
+        top: 70px;
+        width: 100%; 
+        z-index: 10;
+    }
+
+    .drop-down a{
+        color:#ac0164;
+        display: block;
+        font-size: 11px;
+        line-height: 30px;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .drop-down a:hover{
+        color: rgb(255, 193, 213);
+    }
+
+    .line{
+        border-bottom: 0.75px solid rgba(255, 193, 213, 0.089);
+        padding-bottom: 4px;
+    }
+
+    .drop-down,
+    .sign-out,
+    #input-menu{
+        display: none;
+    }
+
+    #input-menu:checked ~ nav{ /* ~ sigifica: todo lo que le siga al #input-menu, que sea hermano y de tipo nav.*/
+        display: block;
+    }
+
+
+
+    #section-title{
+        font-size: 30px;
+        width: 130px;
+        border-bottom: 2px solid #ac0164;;
+        margin: 40px 0 0 20px;
+        box-sizing: border-box;
+        height: 70px;
+        line-height: 27px;
+        color: rgba(255, 255, 255, 0.87);
+        text-shadow: 10px 7px 0 #1a03104f;
+    }
+    
+    .content{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: center;
+        padding: 40px 0 40px 0;
+        
+    }
+    
+    .card{
+        background:#e6e5e5;
+        border-radius: 10px;
+        box-sizing: border-box;
+        width: 320px;
+        margin: 0 20px 50px 20px;
+        height: 460px;
+        position: relative;
+    }
+    
+    .card-img{
+        width: 100%;
+        border-radius: 10px 10px 0 0; 
+    }
+    
+    .info{
+        padding: 30px 25px 0 25px;
+    }
+    
+    .logo{
+        left: 10px;
+        position: absolute;
+        top:112px;
+        width: 30%;
+    }
+    
+    .dates-info{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 25px; 
+    }
+    
+    .dates{
+        background: #5a0e3b;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        font-size: 12px;
+        height: 50px;
+        margin: 0 5px 0 5px;
+        padding-top: 9px;
+        text-align: center;
+        width: 50px;
+    }
+    
+    .dates:hover{
+        background: #380725;
+    }
+    
+    .dates:active{
+        background-color:#7c2357;
+    }
+    
+    .footer{
+        border-top: 1px solid #7c2357;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px 0 20px 0;
+        width: 85%;  
+    }
+    
+    .fa-heart,
+    .fa-bookmark{
+        color: #7c2357;
+        cursor: pointer;
+        font-size: 17px;
+        padding-right: 5px;
+    }
+    
+    .fa-circle{
+        color: #7c2357;
+        cursor: pointer;
+        font-size: 5px;
+        padding: 0 2px 0 2px;
+    }
+    
+    .interaction{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .interaction h3{
+        color: #7c2357;
+        font-size: 14px;
+        margin-right: 25px;
+        padding: 2px;  
+    }
+    
+    .continue{
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        width: 50px;
+    }
+    
+    .card-comingup{
+        display:none;
+    }
+}
+
+
+
+
+/*Breakpoint de mobile 2*/
+@media (min-width: 414px){
+
+header img{
+    width: 35%;
+    }
+
+ #section-title{
+    font-size: 35px;
+    width: 150px;
+    margin: 40px 0 0 45px;
+    line-height: 30px;  
+    }
+
+.card{
+    height: 470px;   
+    }
+}
+
+
+
+
+/*GRANDEEEEEEEEEE*/
+
+/*Breakpoint de tablet*/
+@media (min-width: 768px){
+
+    header img{
+        width: 20%;
+    }
+    
+    a{
+        display: inline;
+        text-decoration: none;
+        color:#ac0164;
+        box-sizing: border-box;
+        margin: 8px;
+        font-weight: 700;
+        font-size: 9px;
+    }
+    
+    .sign-out{
+        background: rgba(233, 2, 79, 0);
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        color: #a78d9b;
+        cursor: pointer;
+        display: inline;
+        margin: 0;
+        font-size: 9px;
+        font-weight: 300;
+        padding-left: 3px;
+        text-decoration: underline;
+    }
+    
+    .fa-sign-out-alt:hover{
+        color: #a78d9b;
+    }
+
+    .sign-out:hover{
+        color: #ffd1e9;
+    }
+    
+    a:hover{
+        border-bottom: 5px solid rgb(255, 193, 213);
+        box-sizing: border-box;
+        color: rgb(255, 193, 213);
+        padding-bottom: 8px;
+    }
+
+    .menu-button{
+        display: none;
+    }
+
+    .checkbox{
+        display: none;
+    }
+
+    .drop-down{
+        display: none!important;
+    }
+
+    
+    /*ESTILOS DE LAS CARDS*/
+    
+    #section-title{
+        font-size: 40px;
+        width: 170px;
+        margin: 40px 0 0 45px;
+        height: 80px;
+        line-height: 35px;
+        text-shadow: 15px 7px 0 #1a03104f;
+    }
+
+
+    .content{
+        padding: 40px 0 80px 0; 
+    }
+
+    .card{
+        height: 470px;
+        
+    }
+   
+    .card-img{
+        width: 100%;
+        border-radius: 10px 10px 0 0; 
+    }
+    
+    .info{
+        padding: 30px 25px 0 25px;
+    }
+    
+    .logo{
+        top:125px;     
+    }
+ 
+    .card-comingup{
+        display:none;
+    }
+  
+}
+   
+
+
+/*Breakpoint de Desktop/Tablet*/
+@media (min-width: 955px){
+
+    header{
+        height: 80px; 
+    }
+
+    header img{
+        width: 15%;
+    }
+        
+    a{
+        margin: 15px;
+        font-size: 10.5px;
+    }
+        
+    .sign-out{
+        font-size: 10px;
+        width: 70px;
+    }
+
+    #section-title{
+        margin: 40px 0 0 120px;
+    }
+
+    .card-comingup{
+        background:#e6e5e515;
+        border: 4px dashed #690b42;
+        border-radius: 10px;
+        box-sizing: border-box;
+        display: block;
+        width: 320px;
+        margin: 0 20px 50px 20px;
+        height: 475px;
+        padding: 140px 80px 0 80px;
+    }
+}
+
+
+
+/*Breakpoint de Desktop*/
+@media (min-width: 1024px){
+    
+    a{
+        font-size: 12px;
+    }
+    
+    .sign-out{
+        font-size: 11px;
+        width: 100px;
+    }
+
+}
