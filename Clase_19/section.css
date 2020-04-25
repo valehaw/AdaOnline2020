@@ -1,0 +1,35 @@
+/*Breakpoint de mobile 1*/
+/*Este approach con max-width NO ES mobile-first*/
+@media (min-width: 320px){
+
+}
+
+
+/*Breakpoint de mobile 2*/
+@media (min-width: 414px){
+
+}
+
+/*Breakpoint de tablet*/
+@media (min-width: 768px){
+    .texto-generico{
+        background-image: url(imagenes/guns.jpg);
+        color: white;
+        height: 200px;
+        text-shadow: 0 1px 3px black;
+
+    }
+    /*El "min-width" quiere decir que a partir de 768 EN ADELANTE, quiero que se muestre la imagen*/
+    /*Si pongo "max-width" quiere decir que a partir de 768 PARA ABAJO, quiero que se muestre la imagen*/
+
+}
+
+/*Breakpoint de Desktop/Tablet*/
+@media (min-width: 955px){
+
+}
+
+/*Breakpoint de Desktop*/
+@media (min-width: 1024px){
+
+}

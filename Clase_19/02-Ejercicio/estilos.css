@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Breakpoint de mobile 1*/
+@media (min-width: 320px){
+    header{
+        align-items: center;
+        background: white;
+        display: flex;
+        height: 70px;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    header img{
+        width: 40%;
+        margin: 0;
+    }
+    
+    a{
+        display: none;
+    }
+
+    .sign-out{
+        display: inline-block;
+    }
+
+    .menu-hamb{
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        display: inline;
+        font-size: 12px;
+        font-weight: 300;
+        margin: 0;
+        background: rgba(233, 2, 79, 0.479);
+        width: 40px;
+        padding: 8px 12px 8px 12px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .menu-hamb:hover{
+    background: rgb(85, 2, 30);
+    } 
+
+}
+
+
+
+/*Breakpoint de mobile 2*/
+@media (min-width: 414px){
+
+    header img{
+        width: 30%;
+    }
+}
+
+
+
+/*Breakpoint de tablet*/
+@media (min-width: 768px){
+
+    header img{
+        width: 20%;
+    }
+    
+    a{
+        display: inline;
+        text-decoration: none;
+        color:rgb(233, 2, 79);
+        box-sizing: border-box;
+        margin: 8px;
+        font-weight: 700;
+        font-size: 11px;
+    }
+    
+    .sign-out{
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        display: inline;
+        font-size: 8px;
+        font-weight: 300;
+        margin: 0;
+        background: rgba(233, 2, 79, 0.479);
+        width: 60px;
+        padding: 8px 12px 8px 12px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .sign-out:hover{
+    background: rgb(85, 2, 30);
+    }
+    
+    a:hover{
+        border-bottom: 5px solid rgb(119, 2, 41);
+        box-sizing: border-box;
+        color: rgb(119, 2, 41);
+        padding-bottom: 8px;
+    }
+    .menu-hamb{
+        display: none;
+    }
+  
+}
+   
+
+
+/*Breakpoint de Desktop/Tablet*/
+@media (min-width: 955px){
+
+    header{
+        height: 80px; 
+    }
+        
+    a{
+        margin: 15px;
+        font-size: 13px;
+    }
+        
+    .sign-out{
+        font-size: 11px;
+        width: 70px;
+    }
+}
+
+
+
+/*Breakpoint de Desktop*/
+@media (min-width: 1024px){
+    
+    a{
+        font-size: 14px;
+    }
+    
+    .sign-out{
+        font-size: 12px;
+        width: 80px;
+    }
+}
