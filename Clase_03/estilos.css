@@ -1,0 +1,78 @@
+body{
+    font-family: 'Merriweather', serif;
+}
+
+/*Fallback - significa que si por alguna razón el browser no puede cargar la fuente, me va a buscar una fuente alternativa sans o con serif. Por eso está la "coma"*/
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+div{
+/*Tag*/
+color: blue;
+}
+
+
+.fondo-violeta{
+    background-color: violet;
+}
+
+.texto-remarcado{
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.block{
+    display: block;
+    width:50%;
+}
+
+.inline{
+    display: inline;
+}
+
+.background-azul{
+    background: blue;
+}
+
+.color-negro{
+    color: black;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+.seccion-2{
+    background-color: green;
+    display: inline-block;
+    height: 100px;
+    overflow: hidden;
+    text-align: center;
+    width:350px;
+}
+
+.box-model{
+    /*El padre define como se comporta el texto*/
+    border: 1px dotted #333;
+    text-align: center;
+}
+
+.span-contenido{
+    border: 3px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 20px;
+    padding: 15px;
+    width:180px;
+}
+
+.guns{
+    max-width: 100%;
+}
+
+.imagen-container{
+    width: 600px;
+    margin-left:auto;
+    margin-right:auto;
+}

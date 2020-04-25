@@ -1,0 +1,66 @@
+body{
+    background: lightgray;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 25px;
+}
+
+.titulo-principal{
+    background: black;
+    color: white;
+    font-family: 'Coda Caption', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+
+.banner{
+    margin-left:auto;
+    margin-right:auto;
+    width: 600px;
+}
+
+.guns{
+    max-width: 100%;
+    margin-bottom: 50px;
+    margin-top:20px
+}
+
+.seccion{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right:auto;
+    padding-bottom: 20px;
+    text-align: justify;
+    width: 70%;
+}
+
+{
+    color: darkred;
+    font-family: 'Oswald', sans-serif;
+    font-size:30px;
+    display: inline-block;
+}
+
+.parrafo-1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.parrafo-2{
+    font-weight:100;
+}
+
+.texto-remarcado{
+    font-weight: bolder;
+    text-decoration: underline;
+    color:blue;
+}
+
+.texto-subrayado{
+    font-style: italic;
+    color: red;
+}
+
+
