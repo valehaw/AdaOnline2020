@@ -1,0 +1,39 @@
+body{
+    background: #76B852;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+form{
+    width: 270px;
+    background: white;
+    padding: 45px;
+    box-shadow: 0 0 7px gray;
+    
+    
+}
+
+input{
+    display: block;
+    box-sizing: border-box;
+    height: 46px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding-left: 15px;
+    background-color:#e7e6e6;
+    border: none;
+}
+
+button{
+    background: #4CAF50;
+    border:none;
+    height: 46px;
+    width: 270px;
+    color: white;
+    ;
+}
