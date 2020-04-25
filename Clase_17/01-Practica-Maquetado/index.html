@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Delivery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="container">
+
+      <!-- EMPIEZA TOP-MENU! -->   
+      <section class="top-menu">
+        <a class="brand" href="#"><img src="img/logo.png" alt="Logo" /></a>
+         
+        <div class="location">
+            <h6> <i class="fas fa-map-marker-alt"></i> My location: <span class="direction">
+              Down Town Brooklyn, str 29, box 14</span> <i class="fas fa-pencil-alt"></i></h6>
+ 
+            <div class="top-input">
+                <input type="text" name="text" placeholder="What do you want?" />
+                <i class="fas fa-search"></i>
+              </div>
+        </div> <!-- termina location -->
+
+        <div class="top-dishes">
+          <img class="dish-one" src="img/pasta1.png" alt="Pasta">
+          <img class="dish-second" src="img/pasta1.png" alt="Pork">
+          <img class="dish-third" src="img/pasta1.png" alt="Pasta">
+        </div>
+          
+        <div class="order">         
+          <div class="order-detail">
+            <a class="quantity" href="#">3 dishes</a>
+            <a class="little-price" href="#">$ 56</a>
+            <a class="cart" href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+          </div>  
+          <button class="order-button" type="submit">Order</button>
+        </div>
+      </section> <!-- TERMINA TOP-MENU -->
+    
+      <!-- INICIO DE HERO -->
+      <section class="hero">
+        <section class="pizza">
+          <figure class="button2"><i class="fas fa-angle-left"></i> Back to menú</figure>
+          <img src="img/pizza1.png">
+        </section> <!-- termina pizza -->
+
+        <section class="info">
+          <h1>Tomato Pomadoro</h1>
+          <article class="hot-chilli">
+            <div class="hot-class">
+              <i class="fas fa-pepper-hot"></i>
+              <i class="fas fa-pepper-hot"></i>
+              <i class="fas fa-pepper-hot"></i>
+              <i class="fas fa-pepper-hot"></i>
+              <i style="color: gray" class="fas fa-pepper-hot"></i>
+            </div>
+            <p class="hot">Hot as Hell !</p>
+          </article>
+          <p class="description">The Amazing sauce accentuates the crust, cheese 
+            and other toppings, as it takes it with the entire pizza...</p>
+
+          <article class="price-cant">
+            <div class="cant">
+              <h6 style="cursor: pointer;">-</h6>
+              <h6 style="padding: 10px 25px;
+              border-left:1px solid #eeeeee;
+              border-right:1px solid #eeeeee">1</h6>
+              <h6 style="cursor: pointer;">+</h6>
+            </div>
+            <div class="price">
+              <p>Price:</p>
+              <h4>$14 <span><img src="img/circle-vol-1circle.svg" 
+                alt="Circle"></span></h4>
+            </div>
+          </article>  
+          <figure class="button3">Add to cart</figure>
+        </section> <!-- termina info --> 
+        
+        <div class="ingredients">
+          <ul>
+            <li><img src="img/cheese.svg" alt="Cheese">
+              <p><span>60g</span> Mozzarella</p></li>
+            <li><img src="img/bacon.svg" alt="Bacon">
+              <p><span>60g</span> Bacon</p></li>
+            <li><img src="img/ham.svg" alt="Ham">
+              <p><span>60g</span> Ham</p></li>
+            <li><img src="img/sausage.svg" alt="Sausage">
+              <p><span>60g</span> Sausages</p></li>
+            <li><img src="img/chicken.svg" alt="Chicken">
+              <p><span>60g</span> Chicken Fillet</p></li>
+            <li><img src="img/pizza.svg" alt="Pizza">
+              <p><span>60g</span> Pizza Base</p></li>                               
+          </ul>
+        </div> 
+      </section> <!-- FIN DE HERO -->
+
+      <div class="background-gray"></div>
+
+      <!-- INICIO DE BREADCRUMB -->
+      <section id="info">
+        <section id="breadcrumb">
+          <a href="#">Find Food</a> <span><i class="fas fa-angle-right"></i></span> 
+          <a href="#">Riviera Restaurant</a> <span><i class="fas fa-angle-right"></i></span> 
+          <a class="select-item" href="#">Tomato Pomadora</a>
+        </section>
+
+        <section id="tabs">
+          <div id="taste" class="select tab-item"><span class="tab-item">Taste good with</span></div>
+          <div id="feedback" class="tab-item">Feedback <span style="color: #ccc">(10)</span></div>
+          <div id="detail" class="tab-item">Detailed info</div>
+        </section>
+
+        <div class="card-container">
+          <div class="card" >
+            <img class="f-dish" src="img/Chicken_Marsala.png" alt="Chicken Food"/>
+            <h5>Hot Pepper Chicken</h5>
+            <p>Cayen pepper, water mellon, mango...</p>
+            <span class="food-price">$ 14 <img src="img/circle-vol-1circle.svg" 
+              alt="Circle"></span>
+            <i class="fas fa-info-circle"></i>
+            <button class="food-buy">+</button>
+          </div>
+                
+        <div class="card">
+          <img class="f-dish" src="img/Moroccan_Chicken.png" alt="Rice"/>
+          <h5>Rice Italliano</h5>
+          <p>Mozzarella, tomato...</p>
+          <span class="food-price">$ 28 <img src="img/circle-vol-1circle.svg" 
+            alt="Circle"></span>
+          <i class="fas fa-info-circle"></i>
+          <button class="food-buy">+</button>
+        </div>
+        
+        <div class="card">
+          <img class="f-dish" src="img/Smothered_Pork_Chops.png" alt="Pork"/>
+          <h5>Miso Rice</h5>
+          <p>Green pods, water, rice, chicken salt...</p>
+          <span class="food-price">$ 10 <img src="img/circle-vol-1circle.svg" 
+            alt="Circle"></span>
+       
+          <i class="fas fa-info-circle"></i>
+          <button class="food-buy">+</button>
+        </div>
+        
+        <div class="card">
+          <img class="f-dish" src="img/Chicken_Marsala.png" alt="Rice"/>
+          <h5>Rice Grande</h5>
+          <p>Red pepper, eggs, mushrooms...</p>
+          <span class="food-price">$ 12 <img src="img/circle-vol-1circle.svg" 
+            alt="Circle"></span>
+          <i class="fas fa-info-circle"></i>
+          <button class="food-buy">+</button>
+          </div>
+        </div>
+      </section> <!-- FIN DE BREADCRUMB -->
+    </div>
+
+  </body>
+</html>
