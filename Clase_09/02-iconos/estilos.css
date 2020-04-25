@@ -1,0 +1,20 @@
+.iconitos .fas,
+.iconitos .fab {
+font-size: 100px;
+}
+
+.lista {
+    list-style-type:none;
+}
+
+.iconitos li{
+    margin-bottom: 25px;
+}
+
+.fa-gitkraken{
+    color: purple;
+}
+
+.fa-linkedin{
+    color: darkblue;
+}
