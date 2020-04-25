@@ -1,0 +1,64 @@
+@import "../abstract/variables";
+
+footer{
+    background: $color-background-2;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 35px 50px 100px 50px;
+    width: 100%;
+    .footer-img{
+        box-sizing: border-box;
+        margin: 0 80px 0 0;
+        width: 250px;
+        img{
+        width: 90%;
+        }
+    }
+}
+
+.footer-menu{
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 200px;
+    h2{
+        color: $color-menu;
+        font-size: $menu-size;
+        font-weight: 700;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        a{
+            color: $color-menu;
+            font-size: $menu-size;
+            line-height: 25px;
+            text-decoration: none;
+            &:hover{
+                color: $color-link-2;
+            }
+        }
+    }
+    &.socialnetwork{
+        width: 230px;
+        
+        ul{
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+
+        }
+        li{
+            box-sizing: border-box;
+            display: inline;
+            padding: 0 40px 0 0;
+        }
+        a{
+            font-size: $title-size;
+            &:hover{
+                color: $color-link-2;
+            }
+        }
+    }
+}
