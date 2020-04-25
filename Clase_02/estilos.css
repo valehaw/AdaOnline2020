@@ -1,0 +1,10 @@
+.parrafo-especial{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#personajes{
+    list-style-type: square;
+}
+
