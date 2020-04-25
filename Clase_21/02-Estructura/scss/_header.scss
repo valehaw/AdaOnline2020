@@ -1,0 +1,16 @@
+@import "./variables";
+
+.main-header{
+    align-items: center;
+    background: lightblue;
+    display: flex;
+    height: 75px;
+    justify-content: space-between;
+    padding: $padding-xl;
+    font-family: $font-family-1;
+    a{
+        color: $secondary-color;
+        text-decoration: none;
+        padding: 15px;
+    }
+}

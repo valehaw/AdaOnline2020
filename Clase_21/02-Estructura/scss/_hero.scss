@@ -1,0 +1,26 @@
+@import "./variables";
+.hero{
+    background: orange;
+    height: calc(100vh - 200px);
+    position: relative;
+    font-family: $font-family-2;
+    padding: $padding-xl;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    #hero{
+        background: lightblue;
+        padding: $padding-m;
+    }
+    #services{
+        background:pink;
+        padding: $padding-m;
+    }
+    #contact{
+        background: lightgreen;
+        padding: $padding-m;
+    }
+    
+    
+}

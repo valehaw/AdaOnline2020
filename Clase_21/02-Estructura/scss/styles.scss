@@ -1,0 +1,7 @@
+@import "./variables";
+@import "./header";
+@import "./hero";
+body{
+    background: $main-background;
+    margin: 0;
+}
