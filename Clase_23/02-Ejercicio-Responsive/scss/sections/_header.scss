@@ -1,0 +1,269 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+
+.main-header{
+    align-items: center;
+    background: $color-white;
+    border: 1px solid $color-border;
+    box-sizing: border-box;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 40px;
+    width: 100%;
+}
+
+
+//MOBILE//
+
+@include breakpoint-mobile-1{
+    .main-logo{
+        width: 65%;
+    }
+    .top-menu{
+        display: none;
+    }
+
+    .menu-hambur{
+        margin: 0;
+        .menu-button{
+            background:$color-white;
+            color: $color-link-2;
+            cursor: pointer;
+            height: 45px;
+            border: none;
+            width: 50px;
+            font-size: $font-size-3;
+            &:hover{
+                width: 20px;
+                color: $color-button;
+            }
+            &:focus{
+                outline: none;
+            }
+            .fa-bars{
+                cursor: pointer;
+            }
+            
+            
+        }
+
+        .drop-down{
+            background-color: $color-link-2;
+            font-size: $link-size;
+            font-weight: 700;
+            left: 0;
+            padding:0;
+            position: absolute;
+            text-align: center;
+            top: 79px;
+            width: 100%; 
+            z-index: 10;
+        }
+    
+        .drop-down a{
+            color:$color-white;
+            display: block;
+            font-size: $font-size-1;
+            line-height: 40px;
+            text-decoration: none;
+            width: 100%;
+        }
+    
+        .drop-down a:hover{
+            color: $color-button;
+        }
+    
+        .line{
+            border-bottom: 0.75px solid $color-button;
+        }
+    
+        .drop-down,
+        .sign-out,
+        #input-menu{
+            display: none;
+        }
+    
+        #input-menu:checked ~ nav{ /* ~ sigifica: todo lo que le siga al #input-menu, que sea hermano y de tipo nav.*/
+            display: block;
+        }
+    }
+
+    
+
+
+}
+
+
+//TABLET//
+
+@include breakpoint-tablet {
+    .main-logo{
+        width: 30%;
+    }
+    .top-menu{
+        align-items: center;
+        display: flex;
+        height: 40px;
+        justify-content: center; 
+        .nav-buttons{
+            display: inline;
+            padding: 0; 
+            li{
+                box-sizing: border-box;
+                display: inline-block;
+                height: 60px;
+                list-style: none;
+                padding: 20px 0 0 0;
+            }
+            .menu-2{
+                color: $color-link-2; 
+                font-size: $font-size-4;
+                font-weight: 700;
+                padding: 0 10px;
+                text-decoration: none;
+                &:hover{
+                    color: $color-button;
+                    border: none;
+                } 
+            } 
+        }
+    }
+    .menu{  
+        align-items: center;
+        box-sizing: border-box;
+        color: $color-link-1;
+        display: flex;
+        font-size: $font-size-4;
+        font-weight: 700;
+        height: 40px;
+        justify-content: center;
+        padding: 0 15px;
+        text-decoration: none;
+        &:hover{
+            color: $color-black;
+            border-bottom: 4px solid $color-black;
+            margin-bottom: -4px;
+        }
+    }
+
+
+    .menu-hambur{
+        display:none;
+    }
+
+    #input-menu{
+        display: none;
+    }
+}
+
+//TABLET//
+
+@include breakpoint-desktop-tablet {
+    .main-logo{
+        width: 25%;
+    }
+    .top-menu{
+        align-items: center;
+        display: flex;
+        height: 40px;
+        justify-content: center; 
+        .nav-buttons{
+            display: inline;
+            padding: 0; 
+            li{
+                display: inline-block;
+                list-style: none;
+            }
+            .menu-2{
+                color: $color-link-2; 
+                font-size: $menu-size;
+                &:hover{
+                    color: $color-button;
+                    border: none;
+                } 
+            } 
+        }
+    }
+    .menu{  
+        align-items: center;
+        box-sizing: border-box;
+        color: $color-link-1;
+        display: flex;
+        font-size: $menu-size;
+        font-weight: 700;
+        height: 40px;
+        justify-content: center;
+        padding: 0 20px;
+        text-decoration: none;
+        &:hover{
+            color: $color-black;
+            border-bottom: 4px solid $color-black;
+            margin-bottom: -4px;
+        }
+    }
+
+
+    .menu-hambur{
+        display:none;
+    }
+
+    #input-menu{
+        display: none;
+    }
+}
+
+
+//DESKTOP//
+
+@include breakpoint-desktop {
+    .top-menu{
+        align-items: center;
+        display: flex;
+        height: 40px;
+        justify-content: center; 
+        .nav-buttons{
+            display: inline;
+            padding: 0; 
+            li{
+                display: inline-block;
+                list-style: none;
+            }
+            .menu-2{
+                color: $color-link-2;
+                &:hover{
+                    color: $color-button;
+                    border: none;
+                } 
+            } 
+        }
+    }
+    .menu{  
+        align-items: center;
+        box-sizing: border-box;
+        color: $color-link-1;
+        display: flex;
+        font-size: $link-size;
+        font-weight: 700;
+        height: 40px;
+        justify-content: center;
+        padding: 0 25px;
+        text-decoration: none;
+        &:hover{
+            color: $color-black;
+            border-bottom: 4px solid $color-black;
+            margin-bottom: -4px;
+        }
+    }
+
+
+    .menu-hamburguesa{
+        display:none;
+
+    } 
+}
+
+
+
+

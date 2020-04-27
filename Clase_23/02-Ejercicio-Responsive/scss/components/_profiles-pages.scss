@@ -1,0 +1,332 @@
+@import "../abstract/variables";
+
+
+
+//MOBILE//
+
+@include breakpoint-mobile-1{
+    .profiles-pages{
+        align-items: center;
+        background-color: $color-white;
+        border-top: 1px solid $color-border;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        font-size: $link-size;
+        height: 150px;
+        justify-content: center;
+        padding: 10px 20px 0 30px;
+        width: 100%;
+        
+        .pages-total{
+            box-sizing: border-box;
+            color: $color-link-1;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+            span{
+                font-weight: 700;
+            }
+        }
+        .pages-number{
+            align-items: center;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-right: 10px;
+            width: 100%;
+            .fa-arrow-left, .fa-arrow-right{
+                border: 1px solid $color-border;
+                border-radius: 100%;
+                box-sizing: border-box;
+                color: $color-border;
+                font-size: $link-size;
+                padding: 8px;
+                &.active{
+                    border: 1px solid $color-link-1;
+                    color: $color-link-1;
+                    cursor: pointer;
+                }
+            }
+            ul{
+                align-items: center;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                padding:0 20px;
+                
+                li{
+                    list-style: none;
+                    
+                    a{
+                        box-sizing: border-box;
+                        color: $color-link-1;
+                        text-decoration: none;
+                        padding: 5px 10px;
+                        &:hover{
+                            background: $color-button;
+                            border-radius: 5px;
+                            color: $color-white;
+                            
+                        }
+                    }
+                    .active{
+                        background: $color-button;
+                        border-radius: 5px;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+//TABLET//
+
+@include breakpoint-tablet {
+    .profiles-pages{
+        align-items: flex-start;
+        background-color: $color-white;
+        border-top: 1px solid $color-border;
+        box-sizing: border-box;
+        display: flex;
+        font-size: $menu-size;
+        flex-direction: row;
+        height: 130px;
+        justify-content: space-between;
+        padding: 30px 50px 0 40px;
+        width: 100%;
+        
+        .pages-total{
+            box-sizing: border-box;
+            color: $color-link-1;
+            padding: 13px 0 0 0;
+            width: 30%;
+            span{
+                font-weight: 700;
+            }
+        }
+        .pages-number{
+            align-items: center;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-right: 20px;
+            .fa-arrow-left, .fa-arrow-right{
+                border: 1px solid $color-border;
+                border-radius: 100%;
+                box-sizing: border-box;
+                color: $color-border;
+                font-size: $link-size;
+                padding: 8px;
+                &.active{
+                    border: 1px solid $color-link-1;
+                    color: $color-link-1;
+                    cursor: pointer;
+                }
+            }
+            ul{
+                align-items: center;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                padding:0 25px;
+                
+                li{
+                    list-style: none;
+                    
+                    a{
+                        box-sizing: border-box;
+                        color: $color-link-1;
+                        text-decoration: none;
+                        padding: 5px 10px;
+                        
+                        &:hover{
+                            background: $color-button;
+                            border-radius: 5px;
+                            color: $color-white;
+                            
+                        }
+                    }
+                    .active{
+                        background: $color-button;
+                        border-radius: 5px;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+//TABLET//
+
+@include breakpoint-desktop-tablet {
+    .profiles-pages{
+        align-items: flex-start;
+        background-color: $color-white;
+        border-top: 1px solid $color-border;
+        box-sizing: border-box;
+        display: flex;
+        font-size: $link-size;
+        flex-direction: row;
+        height: 150px;
+        justify-content: space-between;
+        padding: 30px 50px 0 40px;
+        width: 100%;
+        
+        .pages-total{
+            box-sizing: border-box;
+            color: $color-link-1;
+            padding: 13px 0 0 0;
+            width: 30%;
+            span{
+                font-weight: 700;
+            }
+        }
+        .pages-number{
+            align-items: center;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-right: 20px;
+            .fa-arrow-left, .fa-arrow-right{
+                border: 1px solid $color-border;
+                border-radius: 100%;
+                box-sizing: border-box;
+                color: $color-border;
+                font-size: $link-size;
+                padding: 8px;
+                &.active{
+                    border: 1px solid $color-link-1;
+                    color: $color-link-1;
+                    cursor: pointer;
+                }
+            }
+            ul{
+                align-items: center;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                padding:0 40px;
+                
+                li{
+                    list-style: none;
+                    
+                    a{
+                        box-sizing: border-box;
+                        color: $color-link-1;
+                        text-decoration: none;
+                        padding: 5px 10px;
+                        &:hover{
+                            background: $color-button;
+                            border-radius: 5px;
+                            color: $color-white;
+                            
+                        }
+                    }
+                    .active{
+                        background: $color-button;
+                        border-radius: 5px;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+
+//DESKTOP//
+
+@include breakpoint-desktop {
+
+.profiles-pages{
+    align-items: flex-start;
+    background-color: $color-white;
+    border-top: 1px solid $color-border;
+    box-sizing: border-box;
+    display: flex;
+    font-size: $link-size;
+    flex-direction: row;
+    height: 150px;
+    justify-content: space-between;
+    padding: 30px 50px 0 40px;
+    width: 100%;
+    
+    .pages-total{
+        box-sizing: border-box;
+        color: $color-link-1;
+        padding: 13px 0 0 0;
+        width: 30%;
+        span{
+            font-weight: 700;
+        }
+    }
+    .pages-number{
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-right: 20px;
+        
+        .fa-arrow-left, .fa-arrow-right{
+            border: 1px solid $color-border;
+            border-radius: 100%;
+            box-sizing: border-box;
+            color: $color-border;
+            font-size: $title-size;
+            padding: 8px;
+            &.active{
+                border: 1px solid $color-link-1;
+                color: $color-link-1;
+                cursor: pointer;
+            }
+        }
+        ul{
+            align-items: center;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            padding:0 40px;
+            
+            li{
+                list-style: none;
+                
+                a{
+                    box-sizing: border-box;
+                    color: $color-link-1;
+                    text-decoration: none;
+                    padding: 5px 10px;
+                    &:hover{
+                        background: $color-button;
+                        border-radius: 5px;
+                        color: $color-white;
+                        
+                    }
+                }
+                .active{
+                    background: $color-button;
+                    border-radius: 5px;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    
+}
+}
+

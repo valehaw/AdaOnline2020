@@ -1,0 +1,23 @@
+@import "../abstract/variables";
+
+
+button{
+    background: $color-white;
+    border-top:1px solid $color-border;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    color: $color-link-1;
+    font-size: $title-size;
+    height: 80px;
+    padding: 0 50px;
+    position: relative;
+    width: 100%;
+    &:hover{
+        background: $color-button;
+        border: none;
+        color: $color-white;
+    }
+    
+}
