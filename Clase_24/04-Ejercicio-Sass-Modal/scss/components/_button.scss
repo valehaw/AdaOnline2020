@@ -1,0 +1,27 @@
+@import "../abstract/variables";
+@import "../components/model";
+
+
+.button{
+    background:$color-white;
+    border-top:1px solid $color-border;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    color: $color-link-1;
+    display: block;
+    font-weight: 500;
+    height: 80px;
+    padding-top: 30px;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: $title-size;
+        &:hover{
+            background: $color-button;
+            border: none;
+            color: $color-white;
+        }      
+}
+

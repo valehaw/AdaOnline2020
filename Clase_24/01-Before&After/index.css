@@ -1,0 +1,52 @@
+.ejemplo{
+    position: relative;
+}
+
+.ejemplo:before{
+    content: '';
+    display:inline-block;/*content y display van juntos para poder existir*/
+    width: 100px;
+    height: 100px;
+    background: crimson;
+}
+
+.ejemplo:after{
+    content: 'After!';
+    display: block;
+    border: 1px solid black;
+    width: 75px;
+    height: 15px;
+    padding: 10px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+
+/* TOOLTIP */
+
+
+.cartelito{
+    background: red;
+    border-radius: 8px;
+    position: relative;
+    height: 50px;
+    width: 200px;
+    padding: 25px;
+}
+
+.cartelito:after{
+    content: '';
+    display: block;
+    position: absolute;
+    /*CCS TRICK ROBADO*/
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid red;
+    /*CCS TRICK ROBADO HASTA ACÁ*/
+    bottom: -15px;
+    right: 14px;
+    
+}

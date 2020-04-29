@@ -1,0 +1,674 @@
+@import "../abstract/variables";
+@import "../components/button";
+
+.card{
+    border: 2px solid $color-border;
+    box-sizing: border-box;
+    height: auto;
+    background-color:$color-white;
+    margin: 15px;
+    text-align: center;
+    width: 350px;
+    
+    .availability{
+        box-sizing: border-box;
+        display: flex;
+        height: 50px;
+        justify-content: space-between;
+        padding: 24px 25px;
+        .available-button{
+            color: $color-white;
+            &.active{
+                background: $color-green;
+                border-radius: 15px;
+                box-sizing: border-box;
+                color: $color-white;
+                font-size: $menu-size;
+                height: 25px;
+                padding: 5px;
+                width: 70px;
+            }
+        }
+        
+        h3{
+            color: $color-titles;
+            display: inline-block;
+            font-size: $main-size;
+            font-weight: 700;
+            height: 25px;
+            margin: 0;
+        }
+    }
+    img{
+        border: 1px solid $color-border;
+        border-radius: 100%;
+        box-sizing: border-box;
+        box-shadow: 2px 6px 5px $color-border;
+        height: 160px;
+        margin: 0 40px;
+        width: 160px;
+    }
+    .personal-info{
+        height: 100px;
+        box-sizing: border-box;
+        padding: 20px 25px;
+        h2{
+            color: $color-titles;
+            margin: 0;
+        }
+        p{
+            box-sizing: border-box;
+            color: $color-titles;
+            font-size: $menu-size;
+            padding: 10px 0 0 0;
+        }
+        .freelancer{
+            box-sizing: border-box;
+            color: $color-green;
+            display: flex;
+            justify-content: center;
+            font-size: $menu-size;
+            padding: 10px 0 0 0;
+            .fa-user{
+                display: inline;
+                font-size: $title-size;
+            }
+            h3{
+                font-weight: 500;
+                margin: 0;
+                padding: 0 5px;
+            }
+        }
+        .other{
+            box-sizing: border-box;
+            color: $color-button;
+            display: flex;
+            justify-content: center;
+            font-size: $menu-size;
+            padding: 10px 0 0 0;
+            .fa-building{
+                display: inline;
+                font-size: $title-size;
+            }
+            h3{
+                font-weight: 500;
+                margin: 0;
+                padding: 0 5px;
+            }
+        }
+    }
+    .skills{
+        box-sizing: border-box;
+        height: 50px;
+        padding: 15px 25px 0 25px;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+            a{
+                text-decoration: none;
+            }
+            li{
+                border: 1px solid $color-link-1;
+                border-radius: 15px;
+                box-sizing: border-box;
+                color: $color-link-1;
+                font-size: $menu-size;
+                list-style: none;
+                margin: 0 10px;
+                padding: 8px 14px;
+                
+                &.active{
+                    background: $color-button;
+                    border: none;
+                    box-shadow: 1px 2px 5px $color-button;
+                    color: $color-white;
+                    cursor: pointer;
+                    font-weight: 500;
+    
+                }
+            }
+        }
+        .sign{
+            background: $color-background-2;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color:$color-white;
+            display: none;
+            font-size: $font-size-1;
+            height: auto;
+            left: 175px;
+            padding: 5px 5px 20px 5px;
+            position: relative;
+            top:calc(20vh - 370px);
+            width: 120px;
+            .fa-times-circle{
+                color: $color-white;
+                font-size: $title-size;
+                padding: 10px 0 5px 70px;
+                
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                margin: 0 5px;
+                
+                li{
+                    background: rgba(255, 255, 255, 0.267);
+                    border:1px solid $color-white;
+                    box-sizing: border-box;
+                    color:$color-white;
+                    font-size: $font-size-2;
+                    height: 20px;
+                    padding: 4px 10px;
+                    margin: 5px;
+                } 
+            }  
+        }
+
+        #more:target{
+            display: block;
+        }
+        
+        
+        .sign:after{
+            content: '';
+            display: block;
+            position: absolute;
+            /*CCS TRICK ROBADO*/
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 18px solid $color-background-2;
+            /*CCS TRICK ROBADO HASTA ACÁ*/
+            bottom: -15px;
+            right: 14px;
+            
+        }
+
+
+
+
+        .sign2{
+            background: $color-background-2;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color:$color-white;
+            display: none;
+            font-size: $font-size-1;
+            height: auto;
+            left: 175px;
+            padding: 5px 5px 20px 5px;
+            position: relative;
+            top:calc(20vh - 370px);
+            width: 120px;
+            .fa-times-circle{
+                color: $color-white;
+                font-size: $title-size;
+                padding: 10px 0 5px 70px;
+                
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                margin: 0 5px;
+                
+                li{
+                    background: rgba(255, 255, 255, 0.267);
+                    border:1px solid $color-white;
+                    box-sizing: border-box;
+                    color:$color-white;
+                    font-size: $font-size-2;
+                    height: 20px;
+                    padding: 4px 10px;
+                    margin: 5px;
+                } 
+            }  
+        }
+
+        #more2:target{
+            display: block;
+        }
+        
+        
+        .sign2:after{
+            content: '';
+            display: block;
+            position: absolute;
+            /*CCS TRICK ROBADO*/
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 18px solid $color-background-2;
+            /*CCS TRICK ROBADO HASTA ACÁ*/
+            bottom: -15px;
+            right: 14px;
+            
+        }
+
+
+        .sign3{
+            background: $color-background-2;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color:$color-white;
+            display: none;
+            font-size: $font-size-1;
+            height: auto;
+            left: 175px;
+            padding: 5px 5px 20px 5px;
+            position: relative;
+            top:calc(20vh - 550px);
+            width: 120px;
+            .fa-times-circle{
+                color: $color-white;
+                font-size: $title-size;
+                padding: 10px 0 5px 70px;
+                
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                margin: 0 5px;
+                
+                li{
+                    background: rgba(255, 255, 255, 0.267);
+                    border:1px solid $color-white;
+                    box-sizing: border-box;
+                    color:$color-white;
+                    font-size: $font-size-2;
+                    height: 20px;
+                    padding: 4px 10px;
+                    margin: 5px;
+                } 
+            }  
+        }
+
+        #more3:target{
+            display: block;
+        }
+        
+        
+        .sign3:after{
+            content: '';
+            display: block;
+            position: absolute;
+            /*CCS TRICK ROBADO*/
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 18px solid $color-background-2;
+            /*CCS TRICK ROBADO HASTA ACÁ*/
+            bottom: -15px;
+            right: 14px;   
+        }
+
+
+
+        .sign4{
+            background: $color-background-2;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color:$color-white;
+            display: none;
+            font-size: $font-size-1;
+            height: auto;
+            left: 175px;
+            padding: 5px 5px 20px 5px;
+            position: relative;
+            top:calc(20vh - 310px);
+            width: 120px;
+            .fa-times-circle{
+                color: $color-white;
+                font-size: $title-size;
+                padding: 10px 0 5px 70px;
+                
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                margin: 0 5px;
+                
+                li{
+                    background: rgba(255, 255, 255, 0.267);
+                    border:1px solid $color-white;
+                    box-sizing: border-box;
+                    color:$color-white;
+                    font-size: $font-size-2;
+                    height: 20px;
+                    padding: 4px 10px;
+                    margin: 5px;
+                } 
+            }  
+        }
+
+        #more4:target{
+            display: block;
+        }
+        
+        
+        .sign4:after{
+            content: '';
+            display: block;
+            position: absolute;
+            /*CCS TRICK ROBADO*/
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 18px solid $color-background-2;
+            /*CCS TRICK ROBADO HASTA ACÁ*/
+            bottom: -15px;
+            right: 14px;
+        }
+
+
+        .sign5{
+            background: $color-background-2;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color:$color-white;
+            display: none;
+            font-size: $font-size-1;
+            height: auto;
+            left: 175px;
+            padding: 5px 5px 20px 5px;
+            position: relative;
+            top:calc(20vh - 310px);
+            width: 120px;
+            .fa-times-circle{
+                color: $color-white;
+                font-size: $title-size;
+                padding: 10px 0 5px 70px;
+                
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                margin: 0 5px;
+                
+                li{
+                    background: rgba(255, 255, 255, 0.267);
+                    border:1px solid $color-white;
+                    box-sizing: border-box;
+                    color:$color-white;
+                    font-size: $font-size-2;
+                    height: 20px;
+                    padding: 4px 10px;
+                    margin: 5px;
+                } 
+            }  
+        }
+
+        #more5:target{
+            display: block;
+        }
+        
+        
+        .sign5:after{
+            content: '';
+            display: block;
+            position: absolute;
+            /*CCS TRICK ROBADO*/
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 18px solid $color-background-2;
+            /*CCS TRICK ROBADO HASTA ACÁ*/
+            bottom: -15px;
+            right: 14px;
+        }
+
+
+        .sign6{
+            background: $color-background-2;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color:$color-white;
+            display: none;
+            font-size: $font-size-1;
+            height: auto;
+            left: 175px;
+            padding: 5px 5px 20px 5px;
+            position: relative;
+            top:calc(20vh - 310px);
+            width: 120px;
+            .fa-times-circle{
+                color: $color-white;
+                font-size: $title-size;
+                padding: 10px 0 5px 70px;
+                
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                margin: 0 5px;
+                
+                li{
+                    background: rgba(255, 255, 255, 0.267);
+                    border:1px solid $color-white;
+                    box-sizing: border-box;
+                    color:$color-white;
+                    font-size: $font-size-2;
+                    height: 20px;
+                    padding: 4px 10px;
+                    margin: 5px;
+                } 
+            }  
+        }
+
+        #more6:target{
+            display: block;
+        }
+        
+        
+        .sign6:after{
+            content: '';
+            display: block;
+            position: absolute;
+            /*CCS TRICK ROBADO*/
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 18px solid $color-background-2;
+            /*CCS TRICK ROBADO HASTA ACÁ*/
+            bottom: -15px;
+            right: 14px;
+        }
+
+
+        .sign7{
+            background: $color-background-2;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color:$color-white;
+            display: none;
+            font-size: $font-size-1;
+            height: auto;
+            left: 175px;
+            padding: 5px 5px 20px 5px;
+            position: relative;
+            top:calc(20vh - 310px);
+            width: 120px;
+            .fa-times-circle{
+                color: $color-white;
+                font-size: $title-size;
+                padding: 10px 0 5px 70px;
+                
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                margin: 0 5px;
+                
+                li{
+                    background: rgba(255, 255, 255, 0.267);
+                    border:1px solid $color-white;
+                    box-sizing: border-box;
+                    color:$color-white;
+                    font-size: $font-size-2;
+                    height: 20px;
+                    padding: 4px 10px;
+                    margin: 5px;
+                } 
+            }  
+        }
+
+        #more7:target{
+            display: block;
+        }
+        
+        
+        .sign7:after{
+            content: '';
+            display: block;
+            position: absolute;
+            /*CCS TRICK ROBADO*/
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 18px solid $color-background-2;
+            /*CCS TRICK ROBADO HASTA ACÁ*/
+            bottom: -15px;
+            right: 14px;
+        }
+
+
+        .sign8{
+            background: $color-background-2;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color:$color-white;
+            display: none;
+            font-size: $font-size-1;
+            height: auto;
+            left: 175px;
+            padding: 5px 5px 20px 5px;
+            position: relative;
+            top:calc(20vh - 310px);
+            width: 120px;
+            .fa-times-circle{
+                color: $color-white;
+                font-size: $title-size;
+                padding: 10px 0 5px 70px;
+                
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                margin: 0 5px;
+                
+                li{
+                    background: rgba(255, 255, 255, 0.267);
+                    border:1px solid $color-white;
+                    box-sizing: border-box;
+                    color:$color-white;
+                    font-size: $font-size-2;
+                    height: 20px;
+                    padding: 4px 10px;
+                    margin: 5px;
+                } 
+            }  
+        }
+
+        #more8:target{
+            display: block;
+        }
+        
+        
+        .sign8:after{
+            content: '';
+            display: block;
+            position: absolute;
+            /*CCS TRICK ROBADO*/
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 18px solid $color-background-2;
+            /*CCS TRICK ROBADO HASTA ACÁ*/
+            bottom: -15px;
+            right: 14px;
+        }
+
+
+        .sign9{
+            background: $color-background-2;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color:$color-white;
+            display: none;
+            font-size: $font-size-1;
+            height: auto;
+            left: 175px;
+            padding: 5px 5px 20px 5px;
+            position: relative;
+            top:calc(20vh - 310px);
+            width: 120px;
+            .fa-times-circle{
+                color: $color-white;
+                font-size: $title-size;
+                padding: 10px 0 5px 70px;
+                
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                margin: 0 5px;
+                
+                li{
+                    background: rgba(255, 255, 255, 0.267);
+                    border:1px solid $color-white;
+                    box-sizing: border-box;
+                    color:$color-white;
+                    font-size: $font-size-2;
+                    height: 20px;
+                    padding: 4px 10px;
+                    margin: 5px;
+                } 
+            }  
+        }
+
+        #more9:target{
+            display: block;
+        }
+        
+        
+        .sign9:after{
+            content: '';
+            display: block;
+            position: absolute;
+            /*CCS TRICK ROBADO*/
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 18px solid $color-background-2;
+            /*CCS TRICK ROBADO HASTA ACÁ*/
+            bottom: -15px;
+            right: 14px;
+        }
+
+    }
+    .description{
+        box-sizing: border-box;
+        color: $color-link-1;
+        font-size: $link-size;
+        height: 70px;
+        line-height: 22px;
+        margin: 0 0 15px 0;
+        padding: 15px 25px 0 25px;
+        text-align: center;
+    }
+
+    
+    
+}

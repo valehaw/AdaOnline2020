@@ -1,0 +1,17 @@
+.model{
+    width: 200px;
+    height: 180px;
+    padding: 20px;
+    box-shadow: 3px 3px 3px #333;
+    border-radius: 5px;
+    background: lightyellow;
+    color: orange;
+    position: fixed;
+    top:30px;
+    right: calc(50vw - 100px);
+    display: none;
+}
+
+#boton:target{
+    display: block;
+}

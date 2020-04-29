@@ -1,0 +1,291 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+
+//MOBILE//
+
+@include breakpoint-mobile-1{
+    .model{
+        background: $color-white;
+        opacity: 0.98;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(51, 51, 51, 0.315);
+        box-sizing: border-box;
+        display: none;
+        height: 510px;
+        padding: 20px 40px;
+        position: fixed;
+        right: calc(50vw - 180px);
+        top:calc(50vh - 250px);
+        width: 360px;
+        z-index: 10;
+        h1{
+            color: $color-titles;
+        }
+        h2{
+            box-sizing: border-box;
+            color: $color-titles;
+            font-size: $main-size;
+            margin: 15px 0 25px 0;
+        }
+        p{
+            color: $color-titles;
+            font-size: $link-size;
+            line-height: 20px; 
+        }
+    
+        .fa-times-circle{
+            font-size: 30px;
+            padding: 0 0 0 270px;
+            color: $color-button;
+    
+        }
+        img{
+            border: 1px solid $color-border;
+            border-radius: 100%;
+            box-sizing: border-box;
+            box-shadow: 2px 6px 5px $color-border;
+            height: 160px;
+            margin: 0 40px 30px 40px;
+            width: 160px;
+        }
+        button{
+            background: $color-link-2;
+            border: none;
+            border-radius: 15px;
+            color: $color-white;
+            cursor: pointer;
+            font-size: $main-size;
+            font-weight: 700;
+            height: 40px;
+            width: 180px;
+            &:hover{
+                background: $color-button;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    
+    #button:target{
+        display: block;
+    }
+}
+
+
+//TABLET//
+
+@include breakpoint-tablet {
+    .model{
+        background: $color-white;
+        opacity: 0.98;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(51, 51, 51, 0.315);
+        box-sizing: border-box;
+        display: none;
+        height: 510px;
+        padding: 20px 40px;
+        position: fixed;
+        right: calc(50vw - 225px);
+        top:calc(50vh - 250px);
+        width: 450px;
+        z-index: 10;
+        h1{
+            color: $color-titles;
+        }
+        h2{
+            box-sizing: border-box;
+            color: $color-titles;
+            font-size: $main-size;
+            margin: 15px 0 25px 0;
+        }
+        p{
+            color: $color-titles;
+            font-size: $link-size;
+            line-height: 20px; 
+        }
+    
+        .fa-times-circle{
+            font-size: 30px;
+            padding: 0 0 0 360px;
+            color: $color-button;
+    
+        }
+        img{
+            border: 1px solid $color-border;
+            border-radius: 100%;
+            box-sizing: border-box;
+            box-shadow: 2px 6px 5px $color-border;
+            height: 160px;
+            margin: 0 40px 30px 40px;
+            width: 160px;
+        }
+        button{
+            background: $color-link-2;
+            border: none;
+            border-radius: 15px;
+            color: $color-white;
+            cursor: pointer;
+            font-size: $main-size;
+            font-weight: 700;
+            height: 40px;
+            width: 180px;
+            &:hover{
+                background: $color-button;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    
+    #button:target{
+        display: block;
+    }
+}
+
+
+
+//TABLET//
+
+@include breakpoint-desktop-tablet {
+    .model{
+        background: $color-white;
+        opacity: 0.98;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(51, 51, 51, 0.315);
+        display: none;
+        height: 450px;
+        padding: 20px;
+        position: fixed;
+        right: calc(50vw - 225px);
+        top:calc(50vh - 250px);
+        width: 520px;
+        z-index: 10;
+        h1{
+            color: $color-titles;
+        }
+        h2{
+            box-sizing: border-box;
+            color: $color-titles;
+            font-size: $main-size;
+            margin: 15px 0 25px 0;
+        }
+        p{
+            color: $color-titles;
+            font-size: $link-size;
+            line-height: 20px; 
+        }
+    
+        .fa-times-circle{
+            font-size: 30px;
+            padding: 0 0 0 450px;
+            color: $color-button;
+    
+        }
+        img{
+            border: 1px solid $color-border;
+            border-radius: 100%;
+            box-sizing: border-box;
+            box-shadow: 2px 6px 5px $color-border;
+            height: 160px;
+            margin: 0 40px 30px 40px;
+            width: 160px;
+        }
+        button{
+            background: $color-link-2;
+            border: none;
+            border-radius: 15px;
+            color: $color-white;
+            cursor: pointer;
+            font-size: $main-size;
+            font-weight: 700;
+            height: 40px;
+            width: 180px;
+            &:hover{
+                background: $color-button;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    
+    #button:target{
+        display: block;
+    }
+}
+
+
+
+
+//DESKTOP//
+
+@include breakpoint-desktop {
+.model{
+    background: $color-white;
+    opacity: 0.98;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(51, 51, 51, 0.315);
+    display: none;
+    height: 450px;
+    padding: 20px;
+    position: fixed;
+    right: calc(50vw - 300px);
+    top:calc(50vh - 250px);
+    width: 600px;
+    z-index: 10;
+    h1{
+        color: $color-titles;
+    }
+    h2{
+        box-sizing: border-box;
+        color: $color-titles;
+        font-size: $main-size;
+        margin: 15px 0 25px 0;
+    }
+    p{
+        color: $color-titles;
+        font-size: $link-size;
+        line-height: 20px; 
+    }
+
+    .fa-times-circle{
+        font-size: 30px;
+        padding: 0 0 0 520px;
+        color: $color-button;
+
+    }
+    img{
+        border: 1px solid $color-border;
+        border-radius: 100%;
+        box-sizing: border-box;
+        box-shadow: 2px 6px 5px $color-border;
+        height: 160px;
+        margin: 0 40px 30px 40px;
+        width: 160px;
+    }
+    button{
+        background: $color-link-2;
+        border: none;
+        border-radius: 15px;
+        color: $color-white;
+        cursor: pointer;
+        font-size: $main-size;
+        font-weight: 700;
+        height: 40px;
+        width: 180px;
+        &:hover{
+            background: $color-button;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+#button:target{
+    display: block;
+}
+}

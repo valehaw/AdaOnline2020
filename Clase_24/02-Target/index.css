@@ -1,0 +1,29 @@
+#mi-target{
+    background: white;
+    position: fixed;
+    width: 400px;
+    box-shadow: 0 0 4px #333;
+    height: 100vh;
+    top: 0;
+    left: -400px;
+    transition: left 0.3s linear;
+}
+
+#mi-target:target{
+    left: 0;
+
+}
+
+#mi-target nav a{
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+
+link2:target{
+    background: blue;
+}
+

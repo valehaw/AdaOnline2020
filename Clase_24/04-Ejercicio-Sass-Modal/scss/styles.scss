@@ -1,0 +1,22 @@
+@import "../scss/abstract/variables";
+@import "../scss/abstract/mixins";
+@import "../scss/components/breadcrumb";
+@import "../scss/components/profiles-pages";
+@import "../scss/components/card";
+@import "../scss/components/button";
+@import "../scss/components/model";
+@import "../scss/sections/header";
+@import "../scss/sections/container";
+@import "../scss/sections/footer";
+
+
+body{
+    background:$color-background;
+    font-family: $main-font;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin:0;
+}
