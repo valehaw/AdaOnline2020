@@ -1,0 +1,26 @@
+span{
+    border: 1px solid black;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+}
+
+input:focus + span{
+    background: red;
+}
+
+input:active + span{
+    background: green;
+}
+
+button:active + span{
+    background: blue;
+}
+
+button:focus + span{
+    background: black;
+}
+
+/* el FOCUS es cuando mi elemento se prioriza*/
+
+/*cuando hago click ahí estoy usando ACTIVE*/

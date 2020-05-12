@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.cuadradote{
+    width: 45vw;
+    height: 40vh;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.red{
+    background: crimson;
+}
+
+.blue{
+    background: blue;
+}
+
+.green{
+    background: lightgreen;
+}

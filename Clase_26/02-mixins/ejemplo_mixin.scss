@@ -1,0 +1,27 @@
+@mixin vale ($justify) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+
+
+//y despues cuando quieres aplicar este MIXIN, escribes lo sgte: 
+
+
+.reclamo-form{
+    @include vale (center); //puede ser center, flex-end, flex-start, etc.
+    height: 500px;
+}
+
+
+
+
+//También puede tener todos los parámetros que quiera!!
+
+
+@mixin vale ($justify, $parametro1, $parametro2) {
+    display: $parametro1;
+    align-items: $parametro2;
+    justify-content: $justify;
+}
