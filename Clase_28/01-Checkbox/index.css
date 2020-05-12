@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+
+header{
+    align-items: center;
+    box-shadow: 0 4px 4px #333;
+    display: flex;
+    height: 75px;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+#sidebar{
+    background: crimson;
+    height: 100vh;
+    left: -50vw;
+    position:fixed;
+    top: 0;
+    transition: left 0.3s ease-out;
+    width: 50vw;
+}
+
+
+/*input {display: none;}*/
+
+input:checked ~ #sidebar{
+ left:0;
+}
+
+#sidebar:target{
+    left: 0;
+}
